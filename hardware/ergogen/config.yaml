@@ -1,0 +1,35 @@
+units:
+  kx: 19
+  ky: 19
+points:
+  zones:
+    matrix:
+      columns:
+        pinky:
+          stagger: 0
+        ring:
+          stagger: 12
+        middle:
+          stagger: 5
+        index:
+          stagger: -5
+        inner:
+          stagger: -2
+      rows:
+        bottom:
+        home:
+        top:
+pcbs:
+  vertex_pcb:
+    footprints:
+      choc_v2:
+        what: choc
+        params:
+          hotswap: true
+          v2: true           
+      xiao_ble:
+        what: xiao_ble
+        where:
+          ref: matrix_inner_top
+          shift: [22, -10]
+          rotate: -90
